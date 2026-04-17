@@ -1,0 +1,13 @@
+services:
+  docs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mydocs:latest
+    container_name: mydocs
+    ports:
+      - "10005:10005"
+    volumes:
+      - /mnt/data/apps/myDocs/caddy_data:/data
+      - /mnt/data/apps/myDocs/caddy_config:/config
+    restart: unless-stopped
