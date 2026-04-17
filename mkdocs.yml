@@ -1,0 +1,53 @@
+site_name: Docmosis Tornado Documentation
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+extra_css:
+  - overrides/styles/extra.css
+
+nav:
+  - Home: index.md
+
+  - Understanding Tornado:
+      - Overview: understanding/index.md
+      - Components: understanding/components.md
+      - Deployment Options: understanding/deployment-options.md
+
+  - Configuration:
+      - Overview: configuration/index.md
+      - Basic Configuration: configuration/basic-configuration.md
+      - Template Store: configuration/template-store.md
+      - Configuration Methods: configuration/methods.md
+      - Configuration Precedence: configuration/precedence.md
+      - Advanced Configuration: configuration/advancedConfiguration.md
+      - Licensing: configuration/licensing.md
+
+  - Monitoring & Logging:
+      - Overview: monitoring-logging/index.md
+
+  - Troubleshooting:
+      - Overview: troubleshooting/index.md
+      - Startup Failures: troubleshooting/startup-failures.md
+      - Rendering Errors: troubleshooting/rendering-errors.md
+
+  - How-To Guides:
+      - Overview: how-to/index.md
+      - Docker Compose: how-to/docker-compose.md
+      - Coodrinator: how-to/coordinator.md
+
+  - Advanced Topics:
+      - Overview: advanced/index.md
+      
+  - Reference:
+      - Overview: reference/index.md
+
+  - FAQ: faq/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true

@@ -1,0 +1,6 @@
+:root {
+  --md-primary-fg-color: #1b72ff;
+}
+.md-nav__title {
+  font-size: 0;
+}
